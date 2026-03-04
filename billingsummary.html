@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Summary - Smart Water System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+    <h1>💰 Water Billing Summary</h1>
+    <a href="dashboard.html">⬅ Back to Dashboard</a>
+</header>
+
+<div class="billing-container">
+
+    <!-- Invoice Card -->
+    <div class="invoice-card">
+        <h2>Monthly Invoice</h2>
+
+        <div class="invoice-info">
+            <p><strong>Customer:</strong> Building A</p>
+            <p><strong>Month:</strong> March 2026</p>
+            <p><strong>Rate:</strong> ₹2 per Litre</p>
+        </div>
+
+        <table class="billing-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Usage (L)</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody id="billingBody">
+                <!-- Dynamic Rows -->
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <h3>Total Usage: <span id="totalUsage">0</span> L</h3>
+            <h2>Total Bill: ₹<span id="totalAmount">0</span></h2>
+            <p id="paymentStatus" class="paid">Status: Paid</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="billing.js"></script>
+</body>
+</html>

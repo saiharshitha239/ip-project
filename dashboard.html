@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Water Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Header -->
+<header class="top-header">
+    <h1>💧 Smart Water Control Panel</h1>
+    <div class="user-section">
+        <span>Admin</span>
+        <a href="login.html">Logout</a>
+    </div>
+</header>
+
+<!-- Main Layout -->
+<div class="dashboard-wrapper">
+
+    <!-- Left Stats Panel -->
+    <div class="stats-panel">
+
+        <div id="todayCard" class="stat-card safe">
+            <h3>Today's Usage</h3>
+            <p id="todayUsage">0 L</p>
+        </div>
+
+        <div id="weeklyCard" class="stat-card warning">
+            <h3>Weekly Usage</h3>
+            <p id="weeklyUsage">0 L</p>
+        </div>
+
+        <div id="alertCard" class="stat-card danger">
+            <h3>Active Alerts</h3>
+            <p id="alertCount">0</p>
+        </div>
+
+    </div>
+
+    <!-- Center Water Meter -->
+    <div class="meter-section">
+        <div class="circle-meter">
+            <span id="meterValue">0%</span>
+        </div>
+        <p>Water Capacity Usage</p>
+    </div>
+
+    <!-- Right Alert Panel -->
+    <div class="alert-panel">
+        <h3>⚠ System Alerts</h3>
+        <ul id="alertList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
