@@ -1,20 +1,6 @@
-// =============================================
-// SMART BUILDING WATER MONITORING SYSTEM
-// COMPLETE WEEK 4 FINAL VERSION
-// =============================================
-
-// -----------------------------
-// GLOBAL DATA STORAGE
-// -----------------------------
-
 let usageData = [];
 let alertData = [];
-let pricePerLiter = 0.05;   // Billing rate
-
-
-// =============================================
-// LOGIN VALIDATION
-// =============================================
+let pricePerLiter = 0.05;
 
 function validateLogin(event) {
 
@@ -34,7 +20,6 @@ function validateLogin(event) {
         return false;
     }
 
-    // Demo Credentials
     if (username === "admin" && password === "admin123") {
         window.location.href = "dashboard.html";
     } else {
@@ -45,15 +30,9 @@ function validateLogin(event) {
     return false;
 }
 
-
-// =============================================
-// ADD USAGE ENTRY (Manual or Sensor)
-// =============================================
-
 function addUsageEntry(litres, zone = "Main Tank") {
 
     let timestamp = new Date().toLocaleString();
-
     let status = getStatus(litres);
 
     let entry = {
@@ -76,11 +55,6 @@ function addUsageEntry(litres, zone = "Main Tank") {
     updateBilling();
 }
 
-
-// =============================================
-// STATUS CALCULATION
-// =============================================
-
 function getStatus(litres) {
 
     if (litres < 500) {
@@ -93,11 +67,6 @@ function getStatus(litres) {
         return { class: "critical", text: "Critical" };
     }
 }
-
-
-// =============================================
-// MANUAL INPUT VALIDATION
-// =============================================
 
 function addManualUsage() {
 
@@ -115,11 +84,6 @@ function addManualUsage() {
     input.value = "";
 }
 
-
-// =============================================
-// SENSOR SIMULATION
-// =============================================
-
 function simulateSensor() {
 
     let randomUsage = Math.floor(Math.random() * 1000) + 100;
@@ -130,14 +94,7 @@ function simulateSensor() {
     addUsageEntry(randomUsage, randomZone);
 }
 
-
-// Auto sensor every 8 seconds
 setInterval(simulateSensor, 8000);
-
-
-// =============================================
-// DASHBOARD UPDATE
-// =============================================
 
 function updateDashboard() {
 
@@ -152,11 +109,6 @@ function updateDashboard() {
     if (document.getElementById("latestUsage"))
         document.getElementById("latestUsage").innerText = latest + " L";
 }
-
-
-// =============================================
-// USAGE LOG TABLE UPDATE
-// =============================================
 
 function updateUsageLogs() {
 
@@ -188,11 +140,6 @@ function updateUsageLogs() {
     updateSummary();
 }
 
-
-// =============================================
-// SEARCH FILTER (Usage Logs Page)
-// =============================================
-
 function filterLogs() {
 
     let input = document.getElementById("searchInput")?.value.toLowerCase();
@@ -209,11 +156,6 @@ function filterLogs() {
         }
     });
 }
-
-
-// =============================================
-// SUMMARY SECTION (Usage Logs Page)
-// =============================================
 
 function updateSummary() {
 
@@ -232,11 +174,6 @@ function updateSummary() {
 
     showCriticalAlert(criticalCount);
 }
-
-
-// =============================================
-// ALERT SYSTEM (UI BASED)
-// =============================================
 
 function createAlert(message) {
     alertData.push(message);
@@ -266,11 +203,6 @@ function showCriticalAlert(count) {
     }
 }
 
-
-// =============================================
-// BILLING CALCULATION
-// =============================================
-
 function updateBilling() {
 
     let billElement = document.getElementById("totalBill");
@@ -281,11 +213,6 @@ function updateBilling() {
 
     billElement.innerText = "₹ " + billAmount.toFixed(2);
 }
-
-
-// =============================================
-// INITIAL LOAD
-// =============================================
 
 document.addEventListener("DOMContentLoaded", () => {
     updateDashboard();
