@@ -1,9 +1,3 @@
-/* ============================= */
-/* SMART BUILDING WATER SYSTEM   */
-/* FINAL CLEAN PROFESSIONAL CSS  */
-/* ============================= */
-
-/* ===== GLOBAL RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +8,6 @@
 body {
     margin: 0;
 }
-
-/* ============================= */
-/* ===== PAGE BACKGROUNDS ===== */
-/* ============================= */
 
 .login-bg {
     background: linear-gradient(to right, #0077b6, #00b4d8);
@@ -40,10 +30,6 @@ body {
     background: #f1faff;
     min-height: 100vh;
 }
-
-/* ============================= */
-/* ===== LOGIN PAGE ===== */
-/* ============================= */
 
 .glass-box {
     background: rgba(255, 255, 255, 0.15);
@@ -83,10 +69,6 @@ body {
     background: #0353a4;
 }
 
-/* ============================= */
-/* ===== TOP HEADER ===== */
-/* ============================= */
-
 .top-header {
     background: linear-gradient(to right, #0077b6, #00b4d8);
     color: white;
@@ -101,10 +83,6 @@ body {
     text-decoration: none;
     margin-left: 15px;
 }
-
-/* ============================= */
-/* ===== SIDEBAR ===== */
-/* ============================= */
 
 .sidebar {
     width: 220px;
@@ -131,10 +109,6 @@ body {
     padding-left: 10px;
 }
 
-/* ============================= */
-/* ===== DASHBOARD LAYOUT ===== */
-/* ============================= */
-
 .dashboard-wrapper {
     margin-left: 240px;
     display: flex;
@@ -142,10 +116,6 @@ body {
     padding: 30px;
     min-height: 100vh;
 }
-
-/* ============================= */
-/* ===== STAT CARDS ===== */
-/* ============================= */
 
 .stats-panel {
     width: 25%;
@@ -180,10 +150,6 @@ body {
     background: linear-gradient(to right, #e74c3c, #c0392b);
 }
 
-/* ============================= */
-/* ===== CIRCULAR WATER METER ===== */
-/* ============================= */
-
 .meter-section {
     width: 35%;
     text-align: center;
@@ -211,10 +177,6 @@ body {
     100% { box-shadow: 0 0 10px rgba(0,180,216,0.5); }
 }
 
-/* ============================= */
-/* ===== ALERT PANEL ===== */
-/* ============================= */
-
 .alert-panel {
     width: 30%;
     background: white;
@@ -238,10 +200,6 @@ body {
     background: #ffe6e6;
     border-radius: 6px;
 }
-
-/* ============================= */
-/* ===== TABLE STYLE ===== */
-/* ============================= */
 
 .table-container {
     margin-left: 240px;
@@ -278,20 +236,12 @@ body {
     font-weight: bold;
 }
 
-/* ============================= */
-/* ===== USAGE LOGS PAGE ===== */
-/* ============================= */
-/* ==============================
-   SMART WATER - USAGE LOGS CSS
-================================= */
-
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(to right, #e0f7fa, #b2ebf2);
 }
 
-/* ===== HEADER ===== */
 header {
     background: #0077b6;
     color: white;
@@ -318,7 +268,6 @@ header a:hover {
     background: #03045e;
 }
 
-/* ===== TABLE CONTAINER ===== */
 .table {
     width: 75%;
     margin: 40px auto;
@@ -329,7 +278,6 @@ header a:hover {
     overflow: hidden;
 }
 
-/* ===== TABLE HEADER ===== */
 .table thead {
     background: #0096c7;
     color: white;
@@ -341,24 +289,20 @@ header a:hover {
     font-size: 14px;
 }
 
-/* ===== TABLE BODY ===== */
 .table td {
     padding: 12px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
-/* Alternate Row Color */
 .table tbody tr:nth-child(even) {
     background: #f2f2f2;
 }
 
-/* Hover Effect */
 .table tbody tr:hover {
     background: #e0f7fa;
 }
 
-/* ===== STATUS BADGES ===== */
 .badge {
     padding: 5px 12px;
     border-radius: 20px;
@@ -367,7 +311,6 @@ header a:hover {
     font-size: 13px;
 }
 
-/* Usage Levels */
 .normal {
     background: #2ecc71;
 }
@@ -379,16 +322,6 @@ header a:hover {
 .critical {
     background: #e74c3c;
 }
-/* ========================================= */
-/* 💧 WATER USAGE INTELLIGENCE PANEL DESIGN */
-/* ========================================= */
-
-/* ===== GLOBAL RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -396,10 +329,6 @@ body {
     background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
     padding: 30px;
 }
-
-/* ========================================= */
-/* ===== TOP BAR ===== */
-/* ========================================= */
 
 .usage-topbar {
     display: flex;
@@ -420,7 +349,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* ===== CONTROLS ===== */
 .controls {
     display: flex;
     gap: 15px;
@@ -442,10 +370,6 @@ body {
     box-shadow: 0 0 12px rgba(0, 198, 255, 0.8);
     transform: scale(1.05);
 }
-
-/* ========================================= */
-/* ===== SUMMARY CARDS ===== */
-/* ========================================= */
 
 .summary-section {
     display: flex;
@@ -481,10 +405,6 @@ body {
     font-weight: bold;
 }
 
-/* ========================================= */
-/* ===== TABLE SECTION ===== */
-/* ========================================= */
-
 .table-wrapper {
     display: flex;
     justify-content: center;
@@ -500,7 +420,6 @@ body {
     animation: slideFade 0.7s ease-in-out;
 }
 
-/* ===== TABLE ===== */
 .usage-table {
     width: 100%;
     border-collapse: collapse;
@@ -524,21 +443,15 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-/* Zebra Effect */
 .usage-table tbody tr:nth-child(even) {
     background: #f4faff;
 }
 
-/* Hover Effect */
 .usage-table tbody tr:hover {
     background: #d9f0ff;
     transform: scale(1.01);
     transition: 0.3s ease;
 }
-
-/* ========================================= */
-/* ===== STATUS STYLING (OPTIONAL) ===== */
-/* ========================================= */
 
 .status {
     padding: 6px 14px;
@@ -560,10 +473,6 @@ body {
     background: linear-gradient(to right, #e74c3c, #c0392b);
 }
 
-/* ========================================= */
-/* ===== ANIMATION ===== */
-/* ========================================= */
-
 @keyframes slideFade {
     from {
         opacity: 0;
@@ -574,10 +483,6 @@ body {
         transform: translateY(0);
     }
 }
-
-/* ========================================= */
-/* ===== RESPONSIVE DESIGN ===== */
-/* ========================================= */
 
 @media (max-width: 768px) {
 
@@ -609,9 +514,6 @@ body {
         padding: 20px;
     }
 }
-/* ============================= */
-/* ===== BILLING PAGE ===== */
-/* ============================= */
 
 .billing-container {
     display: flex;
@@ -662,10 +564,6 @@ body {
 
 .paid { color: green; font-weight: bold; }
 .unpaid { color: red; font-weight: bold; }
-
-/* ============================= */
-/* ===== FORM BUTTONS ===== */
-/* ============================= */
 
 input[type="number"],
 input[type="text"],
